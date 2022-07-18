@@ -1,0 +1,28 @@
+1. beginner level
+2. intermediate
+3. advanced
+
+Node JS
+HTML DOM
+
+JavaScript: 
+a. scripting (programming) language
+b. dynamic language
+c. loosely typed language
+
+W3C
+ECMAScript: guideline language
+ES3, ES5, ES6 (2015), ES7
+
+fire an event (load, click, selection,...)
+let's the code get to be executed
+
+anything happens as a response to an event in web apps
+event-driven programming model
+
+control/element 	event 		property to pass a function
+-----------------------------------------------------------------------
+h2			mouseover	onmouseover
+button			click		onclick
+
+E			x		onx

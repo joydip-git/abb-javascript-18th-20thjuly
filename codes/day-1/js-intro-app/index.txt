@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Index
+    </title>
+    <!-- <style>
+        h2 {
+            background-color: beige;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            border: 1px black solid;
+            border-radius: 5px;
+            margin: 20px;
+        }
+    </style> -->
+    <!-- <script>
+
+    </script> -->
+</head>
+
+<body>
+    <!-- <style>
+        h2 {
+            background-color: beige;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            border: 1px black solid;
+            border-radius: 5px;
+            margin: 20px;
+        }
+    </style> -->
+    <h2 onmouseover="showMessage('JS learning begins')">
+        Welcome to JavaScript
+    </h2>
+    <!-- <script>
+        function showMessage(message) {
+            window.alert(message)
+        }
+        //showMessage('JS learning begins')
+    </script> -->
+</body>
+
+</html>
