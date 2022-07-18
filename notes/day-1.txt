@@ -7,8 +7,8 @@ HTML DOM
 
 JavaScript: 
 a. scripting (programming) language
-b. dynamic language
-c. loosely typed language
+b. dynamic language: as such there is no separate compilation of JS, so validity of any opeartion that you perform on a value, is not checked earlier. it is done when the JS code is running in the browser (being executed by JS engine, when the JS file is loaded in the browser along with HTML file). JS does not provide any static type checking.
+c. loosely typed language (we never use aby strict data typing policy here, always use var keyword to declare variable)
 
 W3C
 ECMAScript: guideline language
@@ -26,3 +26,26 @@ h2			mouseover	onmouseover
 button			click		onclick
 
 E			x		onx
+
+JS engine names:
+chrome: V8
+firefox: spidermonkey
+safari: JavaScriptCore (ex: Nitro)
+
+In JS , though we have data types like any other programming language, but in JS we never strictly mention the data type, while declaring the variable to store particular type of value. It's always var keyword.
+
+in JS there is no separate character and string type. you can use single or double quotes to store string.
+
+in JS you don't need to use a line terminator (;) to end the line. if you use, no issues even.
+
+TypeScript: 
+a. a superset of JS
+b. it provides static type checking
+c. it provides facility to declare strictly  typed variables
+
+a. data types
+b. operators
+c. expressions and statement
+
+
+
