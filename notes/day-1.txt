@@ -66,4 +66,6 @@ task-2:
 a. create 4 methods: add, subtract, multiply and divide in a file (utils.js). all 4 methods accepts 2 arguments of type number and returns a value of type number
 b. create another file (index.js) from where you can call those functions, based on choice (1/2/3/4)
 
+data type of arguments in a function: anything => number, string, boolean, an object, an array etc.
+
 
