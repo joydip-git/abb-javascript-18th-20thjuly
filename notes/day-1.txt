@@ -9,6 +9,7 @@ JavaScript:
 a. scripting (programming) language
 b. dynamic language: as such there is no separate compilation of JS, so validity of any opeartion that you perform on a value, is not checked earlier. it is done when the JS code is running in the browser (being executed by JS engine, when the JS file is loaded in the browser along with HTML file). JS does not provide any static type checking.
 c. loosely typed language (we never use aby strict data typing policy here, always use var keyword to declare variable)
+d. object-based programming language
 
 W3C
 ECMAScript: guideline language
@@ -47,5 +48,22 @@ a. data types
 b. operators
 c. expressions and statement
 
+file: main method
+rest of the files:
+
+a. modular concept in JS
+b. difference between exoression and declaration of function in JS
+
+Tasks:
+create an application with a single HTML file (index.html), along with necessary JS files
+link the JS files with HTML file
+task-1:
+a. create an array in JS storing values from 0 to 9 in random manner
+b. sort the array based on choice: ascending or choice: descending
+array in JS has a built-in method for sorting. DO NOT USE THAT.
+
+task-2:
+a. create 4 methods: add, subtract, multiply and divide in a file (utils.js). all 4 methods accepts 2 arguments of type number and returns a value of type number
+b. create another file (index.js) from where you can call those functions, based on choice (1/2/3/4)
 
 
