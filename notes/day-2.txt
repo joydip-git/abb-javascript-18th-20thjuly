@@ -37,18 +37,6 @@ return: an array of any type of elements
 [{JSON},{JSON},{JSON}] => [{JS},{JS},{JS}]
 
 
-3. create an application to calculate total salary of an employee=> js-payroll-ap
-	a. create a model for employee [constructor function first, then later change it to class keyword]
-		data members (value properties): name, id, basicPay, daPay, hraPay
-		method (functional properties): 
-				calculateSalary => calculates the total salary of an employee [add up basicPay, daPay and hraPay]
-					arguments: none
-					return:    calculated total salary
-	b. create an array to store few employee objects
-	c. create some sample employee objects and add them in the array
-	d. iterate through the array, pick up one employee form the array at a time, calculate total salary and then print the total salary of the employee along with the name of the employee
-	format: <name> has total salary <total-salary>
-
 JS objects always will have a property (hidden), named, __proto__. this property stores address of a "base" object.
 
 prototype object: is created for every function in JS. the object is used for inheritance. 
@@ -58,6 +46,77 @@ b. __proto__ property: in JS, there is a top level function, known as "Object". 
 when you call a function with new keyword, JS engine, creates a fresh object first and then the __proto__ property of that object stores the address of the "prototype" object of that function. this way, the newly created object and the prototype object of that function are linked. 
 
 in this way, a function that you declare in JS, is linked with base "Object" function's proptotype object. and the newly created object (by calling the function with new keyword) is linked with the function's prototype object. this linking between the objects is known as prototype chain. It is used to provide inheritance between objects in JS.
+
+
+inheritance in OOP:
+class Person{
+	string name;
+	int id;
+	float salary;
+
+	public Person(string pname, int pid, float psalary){
+		this.name = pname;
+		this.id = pid;
+		this.salary = psalary;
+	}
+
+	public string Print(){
+		return this.name+' '+this.salary;
+	}
+}
+//class Trainer extends Person{
+class Trainer:Person{
+	//string name;
+	//int id;
+	//float salary;
+	string subject;
+
+	public Trainer(string pname, int pid, float psalary, string psubject):base(pname,pid,psalary){
+		//super(pname,pid,psalary);
+		//this.name = pname;
+		//this.id = pid;
+		//this.salary = psalary;
+		this.subject = pubject;
+	}
+
+	//@override
+	public override string Print(){
+		return this.name+' '+this.salary+' '+this.subject;
+	}
+}
+
+prototype-based programming vs. OOP
+
+ES6 new features:
+class, constructor, extends and super keywords
+
+
+3. create an application to calculate total salary of an employee=> js-payroll-ap
+	a. create a model for employee [constructor function first, then later change it to class keyword]
+		data members (value properties): name, id, basicPay, daPay, hraPay
+		method (functional properties): 
+				calculateSalary => calculates the total salary of an employee [add up basicPay, daPay and hraPay]
+					arguments: none
+					return:    calculated total salary
+	b. create two more models: hr and developer
+		1. hr=> representing hr employee
+		data members (value properties): name, id, basicPay, daPay, hraPay, gratuityPay
+		method (functional properties): 
+				calculateSalary => calculates the total salary of an employee [add up basicPay, daPay, hraPay and gratuityPay]
+					arguments: none
+					return:    calculated total salary
+
+		2. developer => representing developer employee
+		data members (value properties): name, id, basicPay, daPay, hraPay, incentivePay
+		method (functional properties): 
+				calculateSalary => calculates the total salary of an employee [add up basicPay, daPay, hraPay and incentivePay]
+					arguments: none
+					return:    calculated total salary
+	c. create an array to store few employee objects (of type hr as well as developer)	
+	d. create some sample employee objects of type hr and developer and add them in the array
+	Note: you will not create any object of employee directly
+	d. iterate through the array, pick up one employee (either hr or developer) from the array at a time, calculate total salary and then print the total salary of the employee along with the name of the employee
+	format: <name> has total salary <total-salary>
 
 
 
