@@ -4,8 +4,9 @@
 	b. function constructor
 	c. Object.create() method
 	d. class keyword (ES6)
-3. JS execution
-4. local variable and object data in JS
+3. objects for a function JS
+4. JS execution
+5. local variable and object data in JS
 
 
 function foo(){
@@ -47,6 +48,17 @@ return: an array of any type of elements
 	c. create some sample employee objects and add them in the array
 	d. iterate through the array, pick up one employee form the array at a time, calculate total salary and then print the total salary of the employee along with the name of the employee
 	format: <name> has total salary <total-salary>
+
+JS objects always will have a property (hidden), named, __proto__. this property stores address of a "base" object.
+
+prototype object: is created for every function in JS. the object is used for inheritance. 
+a. constructor property: this object will have an additional property (apart from regular __proto__ property), named, "constructor". this property refers to the function, for which this prototype object has been created.
+b. __proto__ property: in JS, there is a top level function, known as "Object". the __proto__ property of the prototype object of a function, gets linked with prototype object of the "Object" function, by default.
+
+when you call a function with new keyword, JS engine, creates a fresh object first and then the __proto__ property of that object stores the address of the "prototype" object of that function. this way, the newly created object and the prototype object of that function are linked. 
+
+in this way, a function that you declare in JS, is linked with base "Object" function's proptotype object. and the newly created object (by calling the function with new keyword) is linked with the function's prototype object. this linking between the objects is known as prototype chain. It is used to provide inheritance between objects in JS.
+
 
 
 
