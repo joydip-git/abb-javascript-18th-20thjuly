@@ -36,7 +36,7 @@ return: an array of any type of elements
 [{JSON},{JSON},{JSON}] => [{JS},{JS},{JS}]
 
 
-3. create an application to calculate total salary or an employee
+3. create an application to calculate total salary of an employee=> js-payroll-ap
 	a. create a model for employee [constructor function first, then later change it to class keyword]
 		data members (value properties): name, id, basicPay, daPay, hraPay
 		method (functional properties): 
@@ -44,9 +44,9 @@ return: an array of any type of elements
 					arguments: none
 					return:    calculated total salary
 	b. create an array to store few employee objects
-	c. create some sample employee objects and add the in the array
+	c. create some sample employee objects and add them in the array
 	d. iterate through the array, pick up one employee form the array at a time, calculate total salary and then print the total salary of the employee along with the name of the employee
-	format: <name> has total salay <total-salary>
+	format: <name> has total salary <total-salary>
 
 
 
