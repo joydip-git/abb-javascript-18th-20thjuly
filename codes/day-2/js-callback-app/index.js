@@ -1,4 +1,5 @@
 function filterValues(arr, logicForFiltration) {
+    //debugger
     var result = []
     for (var i = 0; i < arr.length; i++) {
         var element = arr[i]
@@ -11,12 +12,15 @@ function filterValues(arr, logicForFiltration) {
 }
 
 function isEven(num) {
+    //debugger
     return num % 2 === 0 ? true : false
 }
 function isOdd(num) {
+    //debugger
     return num % 2 !== 0 ? true : false
 }
 var numbers = [0, 2, 1, 3, 5, 4, 7, 9, 6, 8]
+//debugger
 var evenNumbers = filterValues(numbers, isEven)
 console.log(evenNumbers)
 
