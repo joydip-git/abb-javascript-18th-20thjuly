@@ -24,3 +24,16 @@ call(foo)
 [index-number]
 var value = arr[index-number]
 
+2. create a function which will help you to convert one type of array to another type (transformation)
+arguments (2): an array of any type of elements, a function which contains logic for transformation of this array
+return: an array of any type of elements
+
+
+[1,2,3,4] => func => ['1','2','3','4']
+
+[1,2,3,4] => func => [5,10,15,20]
+
+[{JSON},{JSON},{JSON}] => [{JS},{JS},{JS}]
+
+
+
