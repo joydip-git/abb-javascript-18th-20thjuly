@@ -20,7 +20,6 @@ class person {
     }
 }
 console.log(person.prototype)
-//debugger
 var anilObj = new person('anil', 1, 1000)
 console.log(anilObj)
 var info = anilObj.print()
