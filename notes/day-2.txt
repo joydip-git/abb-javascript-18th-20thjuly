@@ -1,0 +1,26 @@
+1. callback mechanism
+2. objects in JS:
+	a. object literal syntax
+	b. function constructor
+	c. Object.create() method
+	d. class keyword (ES6)
+3. JS execution
+4. local variable and object data in JS
+
+
+function foo(){
+}
+
+function call(fnRef){
+	fnRef()
+}
+
+call(foo)
+
+1. create a function which takes an array of number type values as an argument and returns another array containing only even numbers
+ 
+
+[]=>indexer
+[index-number]
+var value = arr[index-number]
+
