@@ -1,0 +1,38 @@
+const divide = (a, b) => {
+    const promiseObject = new Promise(
+        //executor function
+        function (resolveFn, rejectFn) {
+            const result = a / b
+            if (result === Infinity) {
+                // const error = new Error('demoinator should not be zero')
+                // throw error
+                //Promise.reject('demoinator should not be zero')
+                rejectFn('demoinator should not be zero')
+                //{state:rejected, result:undefined}
+            }
+            //return result
+            //Promise.resolve(result)//{state:resolved, result:result}
+            resolveFn(result)
+        }
+    )
+    return promiseObject
+}
+
+try {
+    const divPromise = divide(12, 2)
+    divPromise
+        .then(
+            function (data) {
+                console.log(data)
+            },
+            function (e) {
+                console.log(e)
+            }
+        )
+} catch (error) {
+    console.log(error.message)
+}
+
+console.log('end of code')
+//}
+//main()

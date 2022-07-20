@@ -1,7 +1,7 @@
 1. JS execution:
 	a. difference between expression and declaration of function in JS
 	b. local variable and object data in JS
-2. new features: arrow function, object destructuring, spread and rest operator, const and let keyword, string interpolation or templated string
+2. new features: arrow function, object destructuring, spread and rest operator, const and let keyword, string interpolation or templated string, promise and async/await keywords
 3. closure
 4. asynchronity in JS
 5. modular concept in JS
@@ -44,3 +44,50 @@ d. scope object: an array of local variables of the outer functions
 e. execution context object: the object to store execution information of a function, such reference to "this object", "variable object" and "scope object". THIS EXECUTION CONTEXT OBJECT IS CREATED WHEN THE FUNCTION IS CALLED, NOT BEFORE THAT.
 
 scope: any inner function has access to its outer scope, but outer function does not have access to its inner function scope
+
+
+AJAX: asynchronous javascript and xml
+asynchronous: request will be processed and response will be send asynchronously without hameoring the normal execution
+javascript: for this XMLHttpRequest of JS is used
+xml: format of representation of data
+
+XMLHttpRequest:
+	methods: open, send
+	properties: readystate, onreadystatechange, responseText, responseXml, status
+	event: readystatechange
+
+	readystate: 0,1,2,3,4
+
+Promise: 
+	you can delegate a task to this object
+	the object will execute your task/code asynchronously (behind the scene, without blocking your code)
+	you need to subscribe this object in order to get the output/error of the code execution
+		state: pending=>resolved/rejected
+		result:undefined=>value
+
+a. what to do? state => pending
+b. when execution of the task is over
+	what to do in case success => put the item somewhere (state: resolved, result: the exchanged item)
+	what to do in case failure => pass me a note indiacting what went wrong (state: rejected, result: error message)
+
+Promise:
+	a. resolve(data)
+	b. reject(error)
+
+module
+module formats: Common JS, ES6, AMD (asynchronous module definition), UMD (universal module definition)
+module loaders: which understands module format (requirejs, systemjs,...)
+Node JS has Common jS module loader by default
+browser s/w DO NOT Have any module loader => supply a module loader to the browser
+requirejs understands AMD format
+
+babel: transpiler s/w
+a. converts latest version of JS code into older version of JS code (such as ES6+ => <=ES5)
+b. can help to convert ES6 to AMD 
+
+>npm i @babel/core @babel/cli -D
+>npm i @babel/preset-env @babel/plugin-transform-modules-amd -D
+
+.babelrc: for babel configuration
+
+
