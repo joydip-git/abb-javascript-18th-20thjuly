@@ -40,5 +40,7 @@ a. prototype object: created for a function. "even if you don't call that functi
 AFTER CALLING A FUNCTION:
 b. this object: object to store "object data" of the function (Declared with this keyword)
 c. variable object: object to store "local variables" of the function (Declared with var keyword)
-d. scope object:
+d. scope object: an array of local variables of the outer functions
 e. execution context object: the object to store execution information of a function, such reference to "this object", "variable object" and "scope object". THIS EXECUTION CONTEXT OBJECT IS CREATED WHEN THE FUNCTION IS CALLED, NOT BEFORE THAT.
+
+scope: any inner function has access to its outer scope, but outer function does not have access to its inner function scope

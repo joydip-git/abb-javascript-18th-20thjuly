@@ -15,6 +15,7 @@ foo1 = function () {
 }
 foo1()
 
+foo()
 function foo() {
     console.log(x) //?
     var x
@@ -32,7 +33,8 @@ foo()
 
 //hoisting => registering the local variables and function declarations (not expressions) in the variable object during JS's creation/preparation phase (when function is called) is known as hoisting
 //local variables when hoisted, they are undefined
-//all function declarations, when hoisted, refers to the function immediately (that's why they can be invoked even before the declaration during execution phase)
+//all function declarations, when hoisted, refers to the function immediately (that's why they can be invoked even before the declaration during execution phase) here the function itself is hoisted
+//in case of function expression, the variable is hoisted with value undefined, not the function itself
 
 //all local variable declarations are moved up in a JS function (global or any other): variable hoisting=> registering the local variables
 //all function declarations also moved up : function hoisting
