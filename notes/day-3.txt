@@ -11,3 +11,34 @@ i. in JS you don't have multiple inheritance. You can assign other object's prop
 ii. in JS you can change the prototype of an object
 	=> using Object.setPrototypeOf(target,base)
 	=> using __proto__ property of an object
+
+Object data:
+calling functions in JS: every time you call a function in JS, the function gets bound to some object (either to store object data or to access object data, declared with this keyword)
+
+a. without any preceding object reference (func()) => by default object data of that function (declared with this keyword) will be stored in global object [web app=> window, nodejs=> global]. the function is bound by default to that global object. in strict mode, it is not bound to any object.
+
+b. with new keyword (new func()) => object data of that function (declared with this keyword) will be stored in the newly created object. the function is bound to that newly created object.
+
+c. with an preceding object reference (obj.func()) => in that case, the function will be bound to the object as referred by preceding object reference. any object data will be possible to be fetched from that bound object in that function.
+
+local variable:
+
+
+
+JS execution:
+	a. phase-1: preparation stage (preparation of execution)
+		JS engine makes note of all the decalarations (only)
+	b. phase-2: execution stage
+		JS engine now starts the job of assignment, any method call
+
+
+objects for a function JS:
+
+BEFORE CALLING A FUNCTION:
+a. prototype object: created for a function. "even if you don't call that function, still prototype object will exist. it is used for inheritance (accessible via function.prototype property)"
+
+AFTER CALLING A FUNCTION:
+b. this object: object to store "object data" of the function (Declared with this keyword)
+c. variable object: object to store "local variables" of the function (Declared with var keyword)
+d. scope object:
+e. execution context object: the object to store execution information of a function, such reference to "this object", "variable object" and "scope object". THIS EXECUTION CONTEXT OBJECT IS CREATED WHEN THE FUNCTION IS CALLED, NOT BEFORE THAT.
