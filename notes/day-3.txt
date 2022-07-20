@@ -2,9 +2,9 @@
 	a. difference between expression and declaration of function in JS
 	b. local variable and object data in JS
 2. new features: arrow function, object destructuring, spread and rest operator, const and let keyword, string interpolation or templated string
-3. modular concept in JS
-4. closure
-5. asynchronity in JS
+3. closure
+4. asynchronity in JS
+5. modular concept in JS
 6. HTML DOM
 
 i. in JS you don't have multiple inheritance. You can assign other object's properties (copy properties) to another object (using Object.assign()) or use spread operator to copy proprties of other object
