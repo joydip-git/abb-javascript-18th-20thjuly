@@ -52,7 +52,7 @@ file: main method
 rest of the files:
 
 a. modular concept in JS
-b. difference between exoression and declaration of function in JS
+b. difference between expression and declaration of function in JS
 
 Tasks:
 create an application with a single HTML file (index.html), along with necessary JS files
