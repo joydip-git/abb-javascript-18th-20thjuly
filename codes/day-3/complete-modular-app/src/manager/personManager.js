@@ -1,5 +1,6 @@
 import { people } from "../repository/personRepository";
 import { doesPersonExist, getPersonIndex } from "../utils/managerUtils";
+
 //functionalities 
 export async function addPerson(personObj) {
     var status = false
@@ -14,6 +15,7 @@ export async function addPerson(personObj) {
     }
     return status
 }
+
 export async function printInformation(arr) {
     //forEach method accepts a callback with the following signature:
     //argument(1): any type of data
@@ -21,7 +23,7 @@ export async function printInformation(arr) {
     if (arr.length > 0)
         arr
             .forEach(
-                function (p) {
+                (p) => {
                     if (p)
                         console.log(p.print())
                 }
@@ -29,6 +31,7 @@ export async function printInformation(arr) {
     else
         throw new Error('there is no record to display')
 }
+
 export async function updatePerson(personData, id) {
     //does the person with "id" value exists in the array
     //if does exist, get the object from the array
@@ -43,6 +46,7 @@ export async function updatePerson(personData, id) {
     }
     return status
 }
+
 export async function deletePerson(id) {
     //does exist? if exists then get the index position of the object from the array
     var status = false
@@ -56,6 +60,7 @@ export async function deletePerson(id) {
     }
     return status
 }
+
 export async function filterPeople(filterLogic) {
     if (!filterLogic)
         throw new Error('tell me what to do')

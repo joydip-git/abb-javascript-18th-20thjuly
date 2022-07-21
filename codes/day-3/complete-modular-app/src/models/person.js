@@ -4,7 +4,7 @@ export class Person {
         this.id = pid
         this.salary = psalary
     }
-    print = () => {
+    print() {
         return this.name + ' ' + this.id + " " + this.salary
     }
 }
